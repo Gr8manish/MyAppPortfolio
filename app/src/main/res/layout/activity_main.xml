@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9FA8DA"
+    android:padding="10dp"
+    android:fillViewport="false">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#9FA8DA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvTitle"
+        android:id="@+id/tvTitle"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#1A237E"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BSpotify"
+        android:id="@+id/BSpotify"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="BSpotify"
+        style="@style/MyButton"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BSuper_Duo"
+        style="@style/MyButton"
+        android:id="@+id/BSuper_Duo"
+        android:onClick="BSuper_Duo"
+        android:layout_below="@+id/BSpotify"
+        android:layout_alignLeft="@+id/BSpotify"
+        android:layout_alignStart="@+id/BSpotify"
+        android:layout_alignRight="@+id/BSpotify"
+        android:layout_alignEnd="@+id/BSpotify"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BBuild_It_Bigger"
+        android:id="@+id/BBuild_It_Bigger"
+        style="@style/MyButton"
+        android:onClick="BBuild_It_Bigger"
+        android:layout_below="@+id/BSuper_Duo"
+        android:layout_alignLeft="@+id/BSuper_Duo"
+        android:layout_alignStart="@+id/BSuper_Duo"
+        android:layout_alignRight="@+id/BSuper_Duo"
+        android:layout_alignEnd="@+id/BSuper_Duo"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyButton"
+        android:text="@string/BXYZ_Reader"
+        android:id="@+id/BXYZ_Reader"
+        android:onClick="BXYZ_Reader"
+        android:layout_below="@+id/BBuild_It_Bigger"
+        android:layout_alignLeft="@+id/BBuild_It_Bigger"
+        android:layout_alignStart="@+id/BBuild_It_Bigger"
+        android:layout_alignRight="@+id/BBuild_It_Bigger"
+        android:layout_alignEnd="@+id/BBuild_It_Bigger"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyButton"
+        android:text="@string/BCapstone"
+        android:id="@+id/BCapstone"
+        android:onClick="BCapstone"
+        android:layout_below="@+id/BXYZ_Reader"
+        android:layout_alignLeft="@+id/BXYZ_Reader"
+        android:layout_alignStart="@+id/BXYZ_Reader"
+        android:layout_alignRight="@+id/BXYZ_Reader"
+        android:layout_alignEnd="@+id/BXYZ_Reader" />
+
+</RelativeLayout>
+</ScrollView>
